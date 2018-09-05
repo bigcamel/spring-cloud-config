@@ -1,0 +1,14 @@
+server:
+   port: 8090
+spring:
+   profiles:
+      active: dev
+   application:
+      name: config-client
+   cloud:
+      config:
+         url: http://localhost:8888
+         profile: dev
+         label: master
+         
+
