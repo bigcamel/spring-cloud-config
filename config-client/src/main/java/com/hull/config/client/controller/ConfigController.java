@@ -18,5 +18,15 @@ public class ConfigController {
 	@RequestMapping(value="/age")
 	public String getAge() {
 		return config.getAge();
-	}
+	}  
+    
+    @RequestMapping(value="/mail")
+    public String getMail() {
+    	return config.getMail();
+    }
+    
+    @RequestMapping(value="/user")
+    public String getUser() {
+    	return config.getName();
+    }
 }

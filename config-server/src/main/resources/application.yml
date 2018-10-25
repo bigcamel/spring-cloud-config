@@ -1,17 +1,15 @@
-server:
-   port: 8888
-info:
-   name: 分布式
-   contact: lianshou
-   
 spring: 
+   application:
+      name: config-server
    profiles:
-      active: native
+      active: dev1
    cloud:
       config:
-         server:
-            native:
-               searchLocations: D:/config
+         server:           
+            git: 
+               uri: https://github.com/bigcamel/config-hub.git
+               username: admin123
+               password: admin123             
    rabbitmq:
       host: 192.168.1.124
       port: 5672

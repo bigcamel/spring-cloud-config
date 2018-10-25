@@ -23,16 +23,4 @@ public class ConfigClientApp
     }
     
    
-    @Autowired
-    Config config;    
-    
-    @RequestMapping(value="/mail")
-    public String getMail() {
-    	return config.getMail();
-    }
-    
-    @RequestMapping(value="/user")
-    public String getUser() {
-    	return config.getName();
-    }
 }
