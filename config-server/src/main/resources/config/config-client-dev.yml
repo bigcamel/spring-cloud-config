@@ -1,0 +1,9 @@
+server:
+    port: 8080
+user:
+    name: test
+    age: 345
+    desc: good
+    mail: hill1@51caixiang.com
+nick: ok
+    
